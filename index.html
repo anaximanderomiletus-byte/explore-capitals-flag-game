@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ExploreCapitals — Flag Match</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="wrap">
+  <header><h1>Flag Match</h1><p class="hint">Choose the correct flag for the country. 10 rounds. Fast mode.</p></header>
+
+  <section id="game" class="card">
+    <div id="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div>Q: <span id="qnum">0</span>/10</div>
+      <div>Time: <span id="timer">12</span>s</div>
+    </div>
+
+    <div id="prompt" class="prompt">Press Start</div>
+    <div id="flags" class="flags"></div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="redoBtn" hidden>Play Again</button>
+    </div>
+  </section>
+
+  <footer class="foot">Drop into GitHub Pages or Netlify. Link from WordPress Personal.</footer>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
