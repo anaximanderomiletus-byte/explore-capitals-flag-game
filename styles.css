@@ -1,0 +1,18 @@
+:root{--bg:#f7fbff;--card:#ffffff;--accent:#0ea5a4;--muted:#6b7280}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#0b1220;display:flex;align-items:center;justify-content:center;padding:28px}
+.wrap{width:100%;max-width:760px}
+header h1{margin:0;font-size:1.6rem}
+.hint{margin:6px 0 14px;color:var(--muted)}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(12,18,28,0.06)}
+#hud{display:flex;gap:12px;justify-content:space-between;margin-bottom:12px;font-weight:700}
+.prompt{font-size:1.25rem;padding:12px;border-radius:8px;background:#f1f7f7;margin-bottom:12px;text-align:center}
+.flags{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.flag{padding:14px;border-radius:10px;background:#fff;border:1px solid #e6eef2;cursor:pointer;font-size:28px;text-align:center;user-select:none}
+.flag:hover{transform:translateY(-4px)}
+.flag.correct{outline:3px solid #10b981}
+.flag.wrong{outline:3px solid #ef4444;opacity:0.85}
+.controls{display:flex;gap:8px;justify-content:center;margin-top:14px}
+button{padding:8px 14px;border-radius:8px;border:0;cursor:pointer;background:var(--accent);color:#fff;font-weight:700}
+footer.foot{margin-top:12px;color:var(--muted);text-align:center;font-size:0.85rem}
+@media (max-width:520px){.flags{grid-template-columns:repeat(2,1fr)}}
